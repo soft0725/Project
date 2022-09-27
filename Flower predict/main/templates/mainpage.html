@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="'https://ajax.googlepis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="down">붓꽃의 데이터를 입력해 주세요.</h1>
+
+    <form action="/resultpage" method="post">
+      <!--method = "get" 은 주소창에 기록이남고 넘어감
+          method = "post" 는 정보를 숨기고 넘어감-->
+        <h4 class="down">(꽃받침의 길이 폭 꽃잎의 길이 폭) 순서로 입력해 주세요</h3>
+            <div class="inputBox">
+                <input class='input' type="text" name="search1" id="search1" value="" size="20" style="position: relative;" required> 
+                <input class='input' type="text" name="search2" id="search2" value="" size="20" style="position: relative;" required>
+                <input class='input' type="text" name="search3" id="search3" value="" size="20" style="position: relative;" required>
+                <input class='input' type="text" name="search4" id="search4" value="" size="20" style="position: relative;" required>
+                <input type="submit" value="전송">   
+            </div> 
+    </form>
+</body>
+</html>
